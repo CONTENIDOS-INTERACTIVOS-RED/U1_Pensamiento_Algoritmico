@@ -20,11 +20,11 @@
           //- Columna derecha con información
           .col-xl-7.info-section
             .content-wrapper.px-lg-4.pt-lg-4.px-xl-5.py-xl-5.text-start
-              p.home-main-title DIBUJO INDUSTRIAL
-              h1.home-title.mb-4.text-uppercase Dibujo en proyección y representación de vistas
-              p.descripcion.mb-4 La unidad 1, fundamentos del dibujo técnico, explora los principios básicos, historia, normativas y aplicaciones del dibujo técnico. Aborda conceptos clave como tipos de líneas, proyecciones ortogonales y uso de escalas, asegurando precisión en los diseños. Los estudiantes practican con ejercicios aplicando herramientas CAD y normas ISO, DIN y ANSI para una comunicación gráfica efectiva en ingeniería y diseño.
+              p.home-main-title UNIDAD 1
+              h1.home-title.mb-4.text-uppercase Fundamentos del Pensamiento Algorítmico
+              p.descripcion.mb-4 En esta primera unidad, se estudiarán los fundamentos esenciales del pensamiento algorítmico, destacando su rol en la resolución de problemas mediante el diseño de algoritmos estructurados. Además, se explorarán conceptos clave como los algoritmos, la lógica detrás de su construcción, y sus formas de representación a través de pseudocódigo y diagramas de flujo.
 
-              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡Transformen sus ideas en realidad con confianza y creatividad!
+              p.descripcion.mb-4.mb-lg-5.pb-lg-4 Prepárate para aplicar estos principios en diversas áreas, desde la informática hasta la administración y educación. #[strong ¡Inicia tu viaje para dominar la creación de soluciones eficientes y prácticas!]
 
 
               .button-container.mt-auto
@@ -67,7 +67,7 @@ export default {
   .home-main-title
     font-size: 18px
     font-weight: bold
-    color: $color-institucional
+    color: $color-primario
   .home-content
     background-color: white
   .info-section
@@ -98,12 +98,12 @@ export default {
       text-align: center
       display: flex
       .iniciar-btn-text
-        background-color: $color-sistema-d
+        background-color: #7F35AB
         padding: 12px 42px 12px 32px
         width: 100%
         color: #fff
     .icon
-      background-color: $color-sistema-e
+      background-color: #451C5E
       padding: 0px 20px
       color: #fff
       display: flex

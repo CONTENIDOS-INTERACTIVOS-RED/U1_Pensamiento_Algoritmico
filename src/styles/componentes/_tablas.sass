@@ -20,10 +20,12 @@ table
     // background-color: $table-header-bg-color
     th
       padding: 24px 18px
-    th:nth-child(even)
-      background-color: #F5EEC2
-    th:nth-child(odd)
-      background-color: #FBF6DB
+    th
+      background-color: $color-btn-fondo
+      color: $color-btn-texto
+    th:first-child
+      background-color: lighten($color-btn-fondo, 10%)
+      color: $color-btn-texto
 
   th, td
     border: 0px

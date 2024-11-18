@@ -17,15 +17,10 @@ export default {
   },
   menuPrincipal: {
     menu: [
-      // {
-      //   nombreRuta: 'inicio',
-      //   icono: 'fas fa-home',
-      //   titulo: 'Volver al inici',
-      // },
       {
         nombreRuta: 'introduccion',
         icono: 'fas fa-info-circle',
-        unidad: 'UNIDAD 2.',
+        unidad: 'UNIDAD 1.',
         numero: '',
         titulo: 'Introducción',
         desarrolloContenidos: true,
@@ -34,47 +29,69 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
-        numero: '1.',
-        titulo: 'Proyecciones ortogonales y representación de vistas',
+        numero: '1',
+        titulo: 'Definición de algoritmo',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Tipos de Proyección Ortogonal',
+            titulo: 'Sistema',
             hash: 't_1_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo: 'Las vistas en dibujo técnico',
+            titulo: 'Pensamiento Sistémico o lógico',
             hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Eficiencia de los algoritmos',
+            hash: 't_1_3',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
-        unidad: 'Unidad 2.',
-        numero: '2.',
-        titulo: 'Secciones y cortes en el dibujo industrial',
+        unidad: 'Unidad 1.',
+        numero: '2',
+        titulo: 'Lógica algorítmica: secuencias, condiciones, ciclos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.1',
+            titulo: 'Metodología para la solución de algoritmos',
+            hash: 't_2_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.2',
+            titulo: 'Secuencias, condiciones, ciclos',
+            hash: 't_2_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
-        numero: '3.',
-        titulo: 'Tolerancias y ajustes en los planos técnicos',
+        numero: '3',
+        titulo:
+          'Representación de algoritmos: pseudocódigo y diagramas de flujo',
         desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema4',
-        icono: 'far fa-file-alt',
-        unidad: 'Unidad 1.',
-        numero: '4.',
-        titulo: 'Síntesis',
-        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.1',
+            titulo:
+              'Representación de algoritmos: pseudocódigo y diagramas de flujo',
+            hash: 't_3_1',
+          },
+        ],
       },
     ],
     subMenu: [
@@ -118,180 +135,83 @@ export default {
   },
   referencias: [
     {
-      referencia:
-        'American National Standards Institute. (2020). ANSI Y14.5: Dimensioning and tolerancing.',
-      link:
-        'https://www.asme.org/learning-development/find-course/fundamentals-gd-t/online',
+      referencia: '',
+      link: '',
     },
   ],
   glosario: [
     {
-      termino: 'Ajuste',
+      termino: 'Algoritmo',
       significado:
-        'relación de tolerancias entre dos piezas que se ensamblan, determinando cómo interactúan entre sí.',
+        'secuencia de pasos lógicos, finitos que resuelven un problema particular.',
     },
     {
-      termino: 'Ajuste deslizante',
+      termino: 'Ciclos',
       significado:
-        'permite el movimiento relativo entre piezas, como un eje que se desliza dentro de un orificio.',
+        'conjunto de instrucciones de repetición que se llevan a cabo mientras se cumple una condición.',
     },
     {
-      termino: 'Ajuste a presión',
+      termino: 'Condiciones',
       significado:
-        'un ajuste más apretado que requiere fuerza para ensamblar las piezas, como un pasador encajando en un orificio.',
+        'etapa en la que el algoritmo debe tomar una decisión y según la respuesta obtenida continuará su proceso.',
     },
     {
-      termino: 'Ajuste interferente',
+      termino: 'Constante',
       significado:
-        'proporciona una interferencia intencionada entre piezas, resultando en un ajuste muy apretado o conexiones permanentes.',
+        'es una variable almacenada en memoria y cuyo contenido no cambiará durante todo el proceso de ejecución del algoritmo.',
     },
     {
-      termino: 'Proyección ortogonal',
+      termino: 'Diagrama de flujo',
       significado:
-        'método de dibujo técnico que representa objetos tridimensionales en un plano bidimensional mediante líneas perpendiculares a un plano.',
+        'representación gráfica de un proceso, ilustran paso a paso la lógica que debe seguir el programa de manera sencilla.',
     },
     {
-      termino: 'Proyección ortogonal multivista',
-      significado:
-        'representación del objeto mediante varias vistas alineadas, mostrando cada cara sin distorsión.',
+      termino: 'Eficiencia',
+      significado: 'seleccionar la manera óptima para resolver un problema.',
     },
     {
-      termino: 'Proyección isométrica',
+      termino: 'Identificador',
       significado:
-        'representación en tres dimensiones donde los ejes están separados en ángulos de 120° y mantienen la misma escala en los tres ejes.',
+        'corresponde al nombre asignado a una variable en la memoria',
     },
     {
-      termino: 'Proyección dimétrica',
+      termino: 'Memoria',
       significado:
-        'muestra la escala en dos de los tres ejes, con el tercero en una escala diferente, resaltando dimensiones específicas.',
+        'espacio reservado dentro del sistema que contiene un nombre y una variable',
     },
     {
-      termino: 'Proyección trimétrica',
+      termino: 'Proceso',
       significado:
-        'proyección más compleja con ángulos y escalas diferentes en cada uno de los tres ejes.',
+        'conjunto de instrucciones que "manipulan" los datos y entregan la solución al problema.',
     },
     {
-      termino: 'Proyección caballera',
+      termino: 'Programa',
       significado:
-        'representa el objeto con dos dimensiones en vista frontal y la tercera proyectada en ángulo (usualmente de 45°).',
+        '"Conjunto de instrucciones que sigue la computadora para alcanzar un resultado específico" (Von Neumann 1946)',
     },
     {
-      termino: 'Sección',
+      termino: 'Pseudocódigo',
       significado:
-        'representación de un objeto que ilustra como se vería si se cortara a través de un plano específico.',
+        'permite escribir de manera ordenada la secuencia de pasos lógicos que el algoritmo debe ejecutar, es universal lo que implica su comprensión y lectura sin requerirse un lenguaje de programación formal para su escritura',
     },
     {
-      termino: 'Corte',
+      termino: 'Secuencia',
       significado:
-        'vista del objeto a través de una línea de corte, mostrando un único elemento o conjunto de elementos.',
+        'ejecución de instrucciones de manera ordenada y jerárquica, lineal, una tras otra y sin interrupción hasta su finalización',
     },
     {
-      termino: 'Vista en sección',
+      termino: 'Sistema',
       significado:
-        'muestra el interior del objeto como si estuviera "cortado" en una determinada posición.',
+        'conjunto de elementos que tienen una relación directa entre sí y que interactúan de manera coordinada para obtener un objetivo específico',
     },
     {
-      termino: 'Tolerancia',
+      termino: 'Variable',
       significado:
-        'rango de variación permitido en las dimensiones de una pieza para asegurar su funcionalidad.',
+        'diferente a la constante, la variable sí cambia "varía" su valor según los procedimientos que se lleven a cabo dentro del algoritmo.',
     },
   ],
-  complementario: [
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-  ],
-  creditos: [
-    {
-      titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
-      autores: [
-        {
-          nombre: 'Maria Camila Garcia Santamaria',
-          cargo: 'Líder del equipo',
-          centro: 'Dirección General',
-        },
-      ],
-    },
-    {
-      titulo: 'CONTENIDO INSTRUCCIONAL',
-      autores: [
-        {
-          nombre: 'Rafael Neftalí Lizcano Reyes',
-          cargo: 'Asesor metodológico y pedagógico',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-      ],
-    },
-    {
-      titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
-      autores: [
-        {
-          nombre: 'Francisco José Lizcano Reyes',
-          cargo: 'Responsable del equipo',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Leyson Fabian Castaño Perez',
-          cargo: 'Soporte organizacional',
-          centro: 'Centro de Comercio y Servicios Regional Tolima',
-        },
-        {
-          nombre: ['Nombre 1', 'Nombre 2'],
-          cargo: 'Diseño web',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Desarrollo Front-End',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Producción audiovisual',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Validación de diseño y contenido',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-      ],
-    },
-    {
-      titulo: 'GESTORES DE REPOSITORIO',
-      autores: [
-        {
-          nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Validación y vinculación en plataforma LMS',
-          centro: 'Centro de Comercio y Servicios Regional Tolima',
-        },
-      ],
-    },
-  ],
+  complementario: [],
+  creditos: [],
   creditosAdicionales: {
     imagenes:
       'Fotografías y vectores tomados de <a href="https://www.freepik.es/" target="_blank">www.freepik.es</a>, <a href="https://www.shutterstock.com/" target="_blank">www.shutterstock.com</a>, <a href="https://unsplash.com/" target="_blank">unsplash.com </a>y <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a>',
