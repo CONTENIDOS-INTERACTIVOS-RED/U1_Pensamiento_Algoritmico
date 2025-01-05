@@ -134,7 +134,7 @@
         p(data-aos="fade-up") El problema a resolver, permite establecer el objetivo específico a la hora de construir un algoritmo; si se resuelve o no, podrá considerarse que:
         AcordionA(tipo="b")
           .div(titulo="El algoritmo es correcto")
-            p Se analizarán los conceptos fundamentales de paz negativa y paz positiva (Galtung, 1996), y se explorará el enfoque de la cultura de paz, tal como lo promueve la UNESCO.
+            p Si se finaliza correctamente al ingresar los datos adecuados dentro del procedimiento.
           .div(titulo="El algoritmo es incorrecto")
             p Si la solución no finaliza como se espera al ingresar los datos correctos para llevar a cabo el procedimiento, o se obtiene como resultado una salida diferente a la esperada.
         p Si el algoritmo soluciona el problema, se considera que es correcto. 
@@ -180,8 +180,8 @@
 
           .row.justify-content-center.align-items-start.mb-5
             .col-lg-6
-              p(data-aos="fade-up").mb-3 #[strong Situación problema: ] ducharse.
-              p(data-aos="fade-up").mb-3 #[strong Solución:] terminar limpio después de la ducha.
+              p(data-aos="fade-up").mb-3 #[strong Situación problema: ] préstamo del libro.
+              p(data-aos="fade-up").mb-3 #[strong Solución:] entrega del libro al estudiante según disponibilidad.
               p(data-aos="fade-up") #[strong Procedimiento:] 
               ol.lista-ol--cuadro(data-aos="fade-up")
                 li 
@@ -230,7 +230,7 @@
         figure(data-aos="zoom-in")
           img(src='@/assets/curso/tema1/9.png', alt='')
       .col-lg-7.order-1
-        p(data-aos="fade-up") Un algoritmo es un método para resolver problemas y para lograrlo, se puede aplicar el siguiente procedimiento sugerido: 
+        p(data-aos="fade-up") No solo se puede hablar de algoritmo a la hora de comprender su relación directa con los sistemas computacionales, también es importante tener claridad con los siguientes conceptos: 
         AcordionA(tipo="b")
           .div(titulo="Proceso")
             p Se puede entender como un conjunto de instrucciones que “manipulan” los datos ingresados al sistema, para entregar como resultado, la solución esperada al problema.
@@ -322,7 +322,7 @@
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-10
-        p.mb-5(data-aos="fade-up") Del#[strong ejemplo 3], cabe resaltar que el funcionamiento del teclado está ligado al hardware y software del computador; no se podría establecer una conexión directa entre el teclado y el monitor, sin haber tenido un tratamiento desde la unidad central de procesamiento; todo el equipo de cómputo en conjunto, permite que el usuario pueda “operar” sin contratiempos, cada dispositivo; estos, a su vez, suministran los datos requeridos para que la CPU pueda establecer prioridades y dar un orden a cada petición del usuario y, por último, representar las peticiones del usuario a través del monitor. 
+        p.mb-5(data-aos="fade-up") Del #[strong ejemplo 3], cabe resaltar que el funcionamiento del teclado está ligado al hardware y software del computador; no se podría establecer una conexión directa entre el teclado y el monitor, sin haber tenido un tratamiento desde la unidad central de procesamiento; todo el equipo de cómputo en conjunto, permite que el usuario pueda “operar” sin contratiempos, cada dispositivo; estos, a su vez, suministran los datos requeridos para que la CPU pueda establecer prioridades y dar un orden a cada petición del usuario y, por último, representar las peticiones del usuario a través del monitor. 
 
 
         .titulo-figura.mb-4(data-aos="flip-up")
@@ -459,18 +459,25 @@
         .row.material-complementario
           .col-12.col-md-6.col-lg-7
             p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/56561?page=50" target="_blank" rel="noopener noreferrer") Bisbal Riera, J. (2013). Manual de algorítmica: recursividad, complejidad y diseño de algoritmos. Editorial UOC.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=15" target="_blank" rel="noopener noreferrer") Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
+
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
               a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35" target="_blank" rel="noopener noreferrer") Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos. Universidad del Norte.
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50088?page=52" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2006). Programación en C++: algoritmos, estructuras de datos y objetos: (2 ed.). McGraw-Hill España.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50088?page=52" target="_blank" rel="noopener noreferrer") Oviedo Regino, E. M. (2015). Lógica de programación orientada a objetos: (ed.). Ecoe Ediciones. 
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/35059?page=106" target="_blank" rel="noopener noreferrer") Pérez Aguila, R. (2012). Una introducción a las matemáticas para el análisis y diseño de algoritmos: (ed.). El Cid Editor. 
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/U3CGMyjzlvM" target="_blank" rel="noopener noreferrer") Magic Markers. (2021, 15 octubre). ¿Qué son los algoritmos?
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/RSJrBEhdZxw" target="_blank" rel="noopener noreferrer") BBC News Mundo. (2020, 2 octubre). Qué son los algoritmos y cómo aprenden de nosotros | BBC Mundo
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')

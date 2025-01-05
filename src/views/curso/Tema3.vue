@@ -88,6 +88,9 @@
         p.mb-4(data-aos="fade-up") Las características del pseudocódigo son: 
 
         AcordionA(tipo="b")(data-aos="zoom-in")
+          .div(titulo="Simple y claro")
+            p Utilice palabras simples y claras, inicio, fin, mientras.
+
           .div(titulo="Libre de rigidez sintáctica")
             p Libre de rigidez sintáctica propia de los lenguajes de programación, es decir, no sigue las reglas propias de un lenguaje.
 
@@ -398,6 +401,11 @@
                 p #[strong Facilidad en la identificación de errores]
                 p Al comenzar a ejecutar el diagrama de flujo, se encuentran “cuellos de botella” o errores que pueden ser ajustados en el proceso, para garantizar que se resuelva el problema planteado, eficiente y eficazmente.
 
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
     .bg-full-width.border-top.color-primario
       .px-4.p-md-5
         h2 MATERIAL COMPLEMENTARIO
@@ -406,13 +414,10 @@
             p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/56561?page=50" target="_blank" rel="noopener noreferrer") Bisbal Riera, J. (2013). Manual de algorítmica: recursividad, complejidad y diseño de algoritmos. Editorial UOC.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
               a(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=15" target="_blank" rel="noopener noreferrer") Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/68438?page=22" target="_blank" rel="noopener noreferrer") Moreno, E. (2012). Grafos: fundamentos y algoritmos: (ed.). Editorial ebooks Patagonia - J.C. Sáez Editor.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
               a(href="https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35" target="_blank" rel="noopener noreferrer") Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos. Universidad del Norte.
@@ -422,10 +427,195 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
   name: 'Tema3',
-  data: () => ({
-    // variables de vue
-  }),
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Representación de algoritmos',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Qué diferencia existe entre un algoritmo cualitativo y uno cuantitativo?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'El cualitativo utiliza números y el cuantitativo, palabras.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'El cualitativo sigue un orden y el cuantitativo no.',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'El cualitativo no requiere cálculos matemáticos, el cuantitativo sí',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Ambos requieren cálculos matemáticos.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué característica define al pensamiento lógico en el contexto de algoritmos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Se enfoca en el todo y en cómo interactúan sus partes.',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Sigue una secuencia lineal y estructurada',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Permite múltiples soluciones para una misma situación.',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Optimiza el sistema para mejorar su eficiencia.',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              'Si queremos que un ciclo se ejecute un número finito de veces, ¿qué tipo de ciclo es el más adecuado?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'For',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto: 'While',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Do-while',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'If-else',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Cuál de las siguientes opciones representa una secuencia en un algoritmo?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'if-else',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Instrucciones consecutivas',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'While',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Identificadores',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto: '¿Qué se representa mediante un diagrama de flujo?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Un conjunto de instrucciones en lenguaje de programación',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Los pasos de un proceso de manera gráfica',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'La estructura de un programa de computadora',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Los errores en un programa de software',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
 }
 </script>
+
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>

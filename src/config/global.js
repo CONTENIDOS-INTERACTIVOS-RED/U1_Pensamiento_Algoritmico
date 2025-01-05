@@ -117,11 +117,6 @@ export default {
         nombreRuta: 'referencias',
       },
       {
-        icono: 'fas fa-file-download',
-        titulo: 'Descargar PDF',
-        download: 'downloads/material.zip',
-      },
-      {
         icono: 'fas fa-download',
         titulo: 'Descargar material',
         download: 'downloads/material.zip',
@@ -135,8 +130,45 @@ export default {
   },
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Bisbal Riera, J. (2013). Manual de algorítmica: recursividad, complejidad y diseño de algoritmos: (ed.). Editorial UOC.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/56561?page=50',
+    },
+    {
+      referencia:
+        'Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C: (ed.). Plaza y Valdés (México).',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/75937?page=15',
+    },
+    {
+      referencia:
+        'Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos: (2 ed.). McGraw-Hill España.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/50302?page=87',
+    },
+    {
+      referencia:
+        'Joyanes Aguilar, L. (2006). Programación en C++: algoritmos, estructuras de datos y objetos: (2 ed.). McGraw-Hill España.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/50082?page=52',
+    },
+    {
+      referencia:
+        'Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos: (ed.). Universidad del Norte.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35',
+    },
+    {
+      referencia:
+        'Moreno, E. (2012). Grafos: fundamentos y algoritmos: (ed.). Editorial ebooks Patagonia - J.C. Sáez Editor.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/68432?page=22',
+    },
+    {
+      referencia:
+        'Oviedo Regino, E. M. (2015). Lógica de programación orientada a objetos: (ed.). Ecoe Ediciones.',
+      link: 'https://elibro.net/es/ereader/tecnologicadeloriente/70431?page=67',
+    },
+    {
+      referencia:
+        'Pardo Agila, R. (2012). Una introducción a las matemáticas para el análisis y diseño de algoritmos: (ed.). El Cid Editor.',
+      link:
+        'https://elibro.net/es/ereader/tecnologicadeloriente/35059?page=106',
     },
   ],
   glosario: [
@@ -172,12 +204,12 @@ export default {
     {
       termino: 'Identificador',
       significado:
-        'corresponde al nombre asignado a una variable en la memoria',
+        'corresponde al nombre asignado a una variable en la memoria.',
     },
     {
       termino: 'Memoria',
       significado:
-        'espacio reservado dentro del sistema que contiene un nombre y una variable',
+        'espacio reservado dentro del sistema que contiene un nombre y una variable.',
     },
     {
       termino: 'Proceso',
@@ -187,22 +219,22 @@ export default {
     {
       termino: 'Programa',
       significado:
-        '"Conjunto de instrucciones que sigue la computadora para alcanzar un resultado específico" (Von Neumann 1946)',
+        '"Conjunto de instrucciones que sigue la computadora para alcanzar un resultado específico" (Von Neumann 1946).',
     },
     {
       termino: 'Pseudocódigo',
       significado:
-        'permite escribir de manera ordenada la secuencia de pasos lógicos que el algoritmo debe ejecutar, es universal lo que implica su comprensión y lectura sin requerirse un lenguaje de programación formal para su escritura',
+        'permite escribir de manera ordenada la secuencia de pasos lógicos que el algoritmo debe ejecutar, es universal lo que implica su comprensión y lectura sin requerirse un lenguaje de programación formal para su escritura.',
     },
     {
       termino: 'Secuencia',
       significado:
-        'ejecución de instrucciones de manera ordenada y jerárquica, lineal, una tras otra y sin interrupción hasta su finalización',
+        'ejecución de instrucciones de manera ordenada y jerárquica, lineal, una tras otra y sin interrupción hasta su finalización.',
     },
     {
       termino: 'Sistema',
       significado:
-        'conjunto de elementos que tienen una relación directa entre sí y que interactúan de manera coordinada para obtener un objetivo específico',
+        'conjunto de elementos que tienen una relación directa entre sí y que interactúan de manera coordinada para obtener un objetivo específico.',
     },
     {
       termino: 'Variable',
@@ -210,33 +242,4 @@ export default {
         'diferente a la constante, la variable sí cambia "varía" su valor según los procedimientos que se lleven a cabo dentro del algoritmo.',
     },
   ],
-  complementario: [],
-  creditos: [],
-  creditosAdicionales: {
-    imagenes:
-      'Fotografías y vectores tomados de <a href="https://www.freepik.es/" target="_blank">www.freepik.es</a>, <a href="https://www.shutterstock.com/" target="_blank">www.shutterstock.com</a>, <a href="https://unsplash.com/" target="_blank">unsplash.com </a>y <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a>',
-    creativeCommons:
-      'Licencia creative commons CC BY-NC-SA<br><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">ver licencia</a>',
-  },
-  // creditosInicio: [
-  //   {
-  //     titulo: 'En alianza',
-  //     contenido: [
-  //       require('@/assets/template/logo-sena-naranja.svg'),
-  //       require('@/assets/template/mintic.jpg'),
-  //       require('@/assets/template/minsalud.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'En compañía',
-  //     contenido: [
-  //       require('@/assets/template/presidencia.jpg'),
-  //       require('@/assets/template/ecopetrol.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'Una iniciativa',
-  //     contenido: [require('@/assets/template/santander.jpg')],
-  //   },
-  // ],
 }

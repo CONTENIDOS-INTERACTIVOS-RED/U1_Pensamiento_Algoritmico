@@ -54,30 +54,10 @@ const router = new VueRouter({
       ],
     },
     {
-      path: '/actividad/:index?',
-      name: 'actividad',
-      // component: () =>
-      //   import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
-    },
-    {
-      path: '/actividad-didactica',
-      name: 'actividadDidactica',
-      component: () =>
-        import(
-          /* webpackChunkName: "actividad" */ '../views/ActividadDidactica.vue'
-        ),
-    },
-    {
       path: '/glosario',
       name: 'glosario',
       component: () =>
         import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
-    },
-    {
-      path: '/complementario',
-      name: 'complementario',
-      component: () =>
-        import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
     },
     {
       path: '/referencias',
@@ -86,12 +66,6 @@ const router = new VueRouter({
         import(
           /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
         ),
-    },
-    {
-      path: '/sintesis',
-      name: 'sintesis',
-      component: () =>
-        import(/* webpackChunkName: "sintesis" */ '../views/Sintesis.vue'),
     },
   ],
   scrollBehavior(to, from) {

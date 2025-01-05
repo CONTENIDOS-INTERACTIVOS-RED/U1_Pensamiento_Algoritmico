@@ -24,10 +24,7 @@
             p Ejemplos: "universidad", "Clave_24", "jose13"
 
           .div(titulo="Memoria")
-            p Espacio reservado dentro del sistema, que contiene un nombre y una variable. Al declarar una variable como año = 2024, se puede inferir que la variable es año y su valor es 2024.
-
-          .div(titulo="Programa")
-            p Concepto elaborado por Von Neumann en 1946 y lo define como "conjunto de instrucciones que sigue la computadora, para alcanzar un resultado específico".
+            p Espacio reservado dentro del sistema, que contiene un nombre y una variable. Al establecer como parámetro año 2024, se puede inferir que la variable es año y su valor es 2024.
 
       .col-lg-5
         figure(data-aos="zoom-in")
@@ -40,10 +37,10 @@
           .div(titulo="Constante")
             p Es una variable almacenada en memoria y cuyo contenido no cambiará durante todo el proceso de ejecución del algoritmo.
             
-          .div(titulo="Variables")
+          .div(titulo="Variable")
             p Diferente a la constante, la variable sí cambia "varía" su valor, según los procedimientos que se lleven a cabo dentro del algoritmo.
 
-          .div(titulo="Nombres de Variables")
+          .div(titulo="Identificador")
             p Corresponde al nombre asignado a una variable en la memoria y deberá respetar las dos reglas siguientes:
             ol.lista-ol
               li 
@@ -53,7 +50,7 @@
                 span.text-bold 2. 
                 | Seguido de caracteres, como letras o números, sin acentuación.
             p #[strong Ejemplo:] edad, num_cedula, direccion.
-            p Se debe tener en cuenta que el nombre debe ser claro y que identifique, de manera que su nombre sea representativo dentro del algoritmo. Por ejemplo, si se habla de una operación matemática como la multiplicación, se podrá utilizar num1, num2, multiplicacion.
+            p Se deberá utilizar la nemotecnia para llamar cada identificador, de manera que su nombre sea representativo dentro del algoritmo. Por ejemplo, si se habla de una operación matemática como la multiplicación, se podrá utilizar num1, num2, multiplicacion.
 
           .div(titulo="Expresiones")
             p Los operadores y operandos componen una expresión. El operador determina el tipo de operación a realizar y los operandos serán los valores a procesar.
@@ -101,7 +98,7 @@
                 th.text-center -
                 td Resta
               tr(style="background-color: #FFF;")
-                th.text-center(rowspan="6") #[strong Aritméticos]
+                th.text-center(rowspan="6") #[strong Relacionales]
                 th.text-center =
                 td Igual
               tr(style="background-color: #FFF;")
@@ -141,7 +138,7 @@
 
         .titulo-figura.mb-2(data-aos="fade-up")
           h5 Tabla 3
-          span Tipos de operadores
+          span Tipos de expresiones
 
         .tabla-a.mb-5(data-aos="zoom-in")
             table
@@ -330,11 +327,11 @@
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
               a(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=15" target="_blank" rel="noopener noreferrer") Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/Q1z34G3fTUM" target="_blank" rel="noopener noreferrer") Aprende y Verifica. (2022, 10 agosto). ¿Qué es un pseudocódigo? | Explicación rápida y sencilla
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35" target="_blank" rel="noopener noreferrer") Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos. Universidad del Norte.
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/lByEQkmKRis" target="_blank" rel="noopener noreferrer") Aprende y Verifica. (2022, 2 noviembre). Ejemplo de un pseudocódigo y diagrama de flujo ⏐ Explicación RÁPIDA Y SENCILLA
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')

@@ -23,7 +23,7 @@
                 figure
                   img(src='@/assets/curso/intro/2.svg', alt='')
               .col-lg
-                p.mb-0 #[strong En resumen, se destacará la relevancia de diseñar algoritmos antes de iniciar el proceso de programación, resaltando su utilidad en la resolución de problemas y su aplicación práctica no solo en sistemas de información, sino también en campos como la administración y la educación.].
+                p.mb-0 #[strong En resumen, se destacará la relevancia de diseñar algoritmos antes de iniciar el proceso de programación, resaltando su utilidad en la resolución de problemas y su aplicación práctica no solo en sistemas de información, sino también en campos como la administración y la educación.]
 
   
   </template>
