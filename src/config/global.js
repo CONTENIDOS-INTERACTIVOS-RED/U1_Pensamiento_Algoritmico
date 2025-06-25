@@ -93,6 +93,13 @@ export default {
           },
         ],
       },
+      {
+        nombreRuta: 'tema4',
+        icono: 'far fa-file-alt',
+        unidad: 'Unidad 1.',
+        numero: '',
+        titulo: 'Sintesis',
+      },
     ],
     subMenu: [
       // {
