@@ -98,7 +98,7 @@ export default {
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
         numero: '',
-        titulo: 'Sintesis',
+        titulo: 'Síntesis',
       },
     ],
     subMenu: [
